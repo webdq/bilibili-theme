@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        body{
+            background: #d0d0d0;
+        }
+        .container{
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .row{
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .rect{
+            display: inline-block;
+            width: 50px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .input{
+            display: inline-block;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+            margin-right: 10px;
+        }
+        .copy{
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container" class="container"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+    <script>
+        let clipboard = new ClipboardJS('.copy');
+        let color = ['#2c3848','#6982a4','#91aed5','#fff','#f5729d','#171e28','#575e69','#1e2732','#f0361b','#314259','#242e3b'];
+        let str = '';
+        for(let i=0; i<color.length; i++){
+            str += '<div class="row">';
+            str += '<span class="rect" style="background: '+color[i]+';"></span>';
+            str += '<input class="input" type="text" value="'+color[i]+'">';
+            str += '<span class="copy" data-clipboard-text="'+color[i]+'">复制</span>';
+            str += '</div>';
+        }
+        $('#container').html(str);
+    </script>
+</body>
+</html>
