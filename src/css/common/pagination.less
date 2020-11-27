@@ -1,0 +1,80 @@
+@import "../../variables.less";
+
+/* 评论--底部分页 */
+.paging-box-big .current,
+.paging-box-big .dian,
+.paging-box-big .next,
+.paging-box-big .prev,
+.paging-box-big .tcd-number {
+  .btn-ghost-color();
+}
+.paging-box-big .current,
+.paging-box-big .current:hover,
+.paging-box-big .dian:hover,
+.paging-box-big .next:hover,
+.paging-box-big .prev:hover,
+.paging-box-big .tcd-number:hover {
+  .btn-ghost-active-color();
+}
+.paging-box-big .page-jump {
+  color: @secondary-color;
+}
+.paging-box-big .page-jump input {
+  background-color: transparent;
+  border: 1px solid @secondary-color;
+}
+.paging-box-big .page-jump input:focus {
+  border-color: @secondary-hover-color;
+}
+/* 子栏目分页 */
+.pager .pages .page-item button {
+  .btn-ghost-color();
+}
+.pager .pages .page-item.active button,
+.pager .pages .page-item button:hover {
+  .btn-ghost-active-color();
+}
+.pager .pages strong {
+  color: @secondary-color;
+}
+.pager .jump-pager {
+  color: @secondary-color;
+}
+.pager .jump-pager input[type="text"] {
+  background-color: transparent;
+  border: 1px solid @secondary-color;
+}
+.pager .jump-pager input[type="text"]:focus {
+  border-color: @secondary-hover-color;
+}
+/* 纪录片索引分页 */
+.pagelistbox .p {
+  .btn-ghost-color();
+}
+.pagelistbox .p.active,
+.pagelistbox .p:hover {
+  .btn-ghost-active-color();
+}
+.pagelistbox strong {
+  color: @secondary-color;
+}
+.pagelistbox .custom-right .custom-right-inner {
+  color: @secondary-color;
+}
+.pagelistbox .custom-right .custom-right-inner.custompage {
+  background-color: transparent;
+  border: 1px solid @secondary-color;
+}
+.pagelistbox .custom-right .custom-right-inner.custompage:focus {
+  border-color: @secondary-hover-color;
+}
+/* 游戏视频库分页 */
+.bili-game-local .pager .pages .page-item button {
+  .btn-ghost-color();
+}
+.bili-game-local .pager .pages .page-item button:hover {
+  .btn-ghost-active-color();
+}
+.bili-game-local .pager .pages .page-item.active button {
+  .btn-ghost-active-color();
+}

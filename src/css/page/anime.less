@@ -1,0 +1,243 @@
+@import "../../variables.less";
+
+/* 番剧 */
+.bangumi-home-crumb .fcname ul.n_num li a {
+  color: @menu-text-color;
+}
+.bangumi-home-crumb .fcname ul.n_num li.on a {
+  color: @menu-text-hover-color;
+}
+.bangumi-home-crumb .fcname ul.n_num li:hover a {
+  color: @menu-text-hover-color;
+}
+.block-area .timeline-title .headline .name {
+  color: @panel-title-color;
+}
+.block-area .timeline-title .headline .timeline-more {
+  .btn-contrast-ghost-color();
+}
+.block-area .timeline-title .headline .timeline-more:hover {
+  .btn-contrast-ghost-active-color();
+}
+.timeline-box .timeline-item .item-right p.t a,
+.timeline-box .timeline-item .item-right p.t a:hover {
+  color: @video-title-color;
+}
+.timeline-box .timeline-item .item-right p.num {
+  color: @video-subtitle-color;
+}
+.timeline-box .timeline-item .item-right p.num a {
+  .btn-primary-active-color();
+}
+.timeline-box .timeline-item.new .item-right p.num a {
+  .btn-contrast-active-color();
+}
+.block-area .timeline-toggle-block .timeline-toggle-btn {
+  color: @secondary-color;
+}
+.block-area .timeline-toggle-block .timeline-toggle-btn span {
+  margin-top: 4px;
+  display: inline-block;
+}
+.block-area .timeline-toggle-block .timeline-toggle-btn:hover {
+  color: @base-text-hover-color;
+}
+.block-area
+  .timeline-toggle-block
+  .timeline-toggle-btn:hover
+  i.timeline-icon-toggle-down {
+  background-position: -603px -732px;
+}
+.block-area
+  .timeline-toggle-block
+  .timeline-toggle-btn:hover
+  i.timeline-icon-toggle-up {
+  background-position: -603px -797px;
+}
+.block-area .follow-wrapper .follow-head h3 {
+  color: @panel-title-color;
+}
+.follow-item .details .season-title,
+.follow-item .details .season-title:hover {
+  color: @panel-title-color;
+}
+.follow-item .details .ep-info,
+.follow-item .details .ep-intro {
+  color: @video-subtitle-color;
+}
+.block-area .follow-wrapper .follow-head .follow-more {
+  border: 0;
+  .btn-primary-color();
+}
+.block-area .follow-wrapper .follow-head .follow-more:hover {
+  .btn-primary-active-color();
+}
+.block-area .follow-wrapper .follow-head .follow-more:hover i {
+  margin-left: 0;
+  background-position: -541px -218px;
+}
+.index-entry-wrapper .filter-block-title span {
+  color: @panel-title-color;
+}
+.index-entry-wrapper .filter-block-title a {
+  color: @secondary-color;
+}
+.index-entry-wrapper .filter-block-title a:hover {
+  color: @secondary-hover-color;
+}
+.index-entry-wrapper .filter-block-title a:after {
+  background-position: -601px -218px;
+}
+.index-entry-wrapper .filter-list .filter-item {
+  color: @secondary-color;
+}
+.index-entry-wrapper .filter-list .filter-item:hover {
+  color: @secondary-hover-color;
+}
+.block-area .block-left .block-header .block-title {
+  color: @panel-title-color;
+}
+.video-item-biref .biref-info .biref-title.biref-title-line2 {
+  color: @video-title-color;
+}
+.random-change {
+  border: 0;
+  .btn-primary-color();
+}
+.random-change:hover {
+  .btn-primary-active-color();
+}
+.random-change:hover .icon_read {
+  background-position: -592px -89px;
+}
+.new-stat-module .zone-title .headline .name {
+  color: @panel-title-color;
+}
+.new-stat-module .zone-title .headline .new-stat-more {
+  border: 0;
+  .btn-primary-color();
+}
+.new-stat-module .zone-title .headline .new-stat-more:hover {
+  .btn-primary-active-color();
+}
+.new-stat-module .zone-title .headline .new-stat-more:hover i {
+  margin-left: 0;
+  background-position: -541px -218px;
+}
+.handpick-right-module .block-header .block-title {
+  color: @panel-title-color;
+}
+.recom-right-head h3 {
+  color: @panel-title-color;
+}
+.pgc-rank-list .rank-item.highlight .ri-num {
+  .rank-top-color();
+}
+.pgc-rank-list .rank-item .ri-num {
+  .rank-other-color();
+}
+.pgc-rank-list .rank-item .ri-detail .ri-title {
+  color: @video-title-color;
+}
+.pgc-rank-list .rank-item .ri-detail .ri-point {
+  color: @video-subtitle-color;
+}
+.pgc-rank-dropdown {
+  border: 0;
+  .btn-primary-color();
+}
+.pgc-rank-dropdown .dropdown-list {
+  border: 0;
+  background-color: @secondary-color;
+  left: 0;
+}
+.pgc-rank-dropdown .dropdown-list .dropdown-item {
+  .btn-primary-color();
+}
+.pgc-rank-dropdown .dropdown-list .dropdown-item:hover {
+  .btn-primary-active-color();
+}
+/* 新番时间表 */
+#app,
+.timeline-header,
+.timeline-wrapper {
+  background: transparent;
+}
+.timeline-header,
+.timeline-header .tl-weeks,
+.timeline-wrapper {
+  box-shadow: none;
+}
+.season-timeline .season-group.is-published {
+  border-left: 1px solid @secondary-color;
+}
+.season-timeline .season-group.is-published .group-time:before {
+  border-color: @secondary-color;
+  background: @secondary-color;
+}
+.season-timeline .season-group.today {
+  border-color: @contrast-color !important;
+}
+.season-timeline .season-group.today .group-time:before {
+  border-color: @contrast-color !important;
+}
+.season-timeline .season-group {
+  border-color: @secondary-color;
+}
+.season-timeline .season-group .group-time:before {
+  border-color: @secondary-color;
+  background: @secondary-color;
+}
+.tl-head .tl-day .indicator {
+  background: @secondary-color;
+}
+.tl-head .tl-day span.t-date {
+  color: @secondary-color;
+}
+.tl-head .tl-day span.t-week {
+  color: @secondary-color;
+}
+.tl-head .tl-day.today .indicator {
+  background: @contrast-color;
+}
+.tl-head .tl-day.today span.t-date {
+  color: @contrast-color;
+}
+.tl-head .tl-day.today span.t-week {
+  color: @contrast-color;
+}
+.bread-crumb ul li a {
+  color: @menu-text-color;
+}
+.bread-crumb ul li.on a,
+.bread-crumb ul li:hover a {
+  color: @menu-text-hover-color;
+}
+.timeline-header .tl-weeks:after {
+  border-bottom: 1px solid @secondary-color;
+}
+.tl-head .tl-day {
+  background: @primary-color;
+  border-radius: 4px;
+}
+li.season-item .season-body .season-title {
+  color: @video-title-color;
+}
+li.season-item .season-body .season-title:hover {
+  color: @video-title-hover-color;
+}
+li.season-item .season-body .season-desc {
+  color: @video-subtitle-color;
+}
+li.season-item .season-body .season-desc.published {
+  color: @video-subtitle-color;
+}
+.season-timeline .season-group .group-time {
+  color: @video-subtitle-color;
+}
+.season-timeline .season-group.is-published .group-time {
+  color: @video-subtitle-color;
+}
+.season-timeline .season-group.today .group-time {
+  color: @video-subtitle-color;
+}

@@ -1,0 +1,643 @@
+@import "../../variables.less";
+
+/* 游戏 */
+.game-groom-box-m .game-groom-m {
+  background: lighten(@primary-color, 5%);
+  border: 1px solid lighten(@primary-color, 5%);
+}
+.game-groom-m .title {
+  background: transparent;
+}
+.game-groom-m a .title {
+  color: @video-title-color;
+}
+.game-groom-m:hover a .title {
+  color: @video-title-hover-color;
+}
+.game-groom-m .num {
+  background: transparent;
+}
+.game-groom-m .num span {
+  color: @video-subtitle-color;
+}
+/* 赛事 */
+.game-banner .banner-title .title-content ul li a {
+  color: @tab-text-color;
+}
+.game-banner .banner-title .title-content ul li.active a {
+  color: @tab-text-hover-color;
+  border-bottom: 2px solid @tab-text-hover-color;
+}
+.score-contain .page-btn {
+  border: 0;
+  .btn-primary-color();
+}
+.score-contain .page-btn:hover {
+  .btn-primary-active-color();
+}
+.card-score .score-wrap {
+  border: 0;
+  background: lighten(@primary-color, 5%);
+}
+.card-score .title .title-text {
+  color: @secondary-color;
+}
+.card-score .time-wrap .text {
+  color: @video-title-color;
+}
+.card-score .time-wrap .text.state.live {
+  color: @contrast-color;
+}
+.card-score .time-wrap .text.state.playing {
+  color: @secondary-color;
+}
+.card-score .time-wrap .text.state.nobegin {
+  color: @secondary-color;
+}
+.card-score .special-game-info .special-game-name {
+  color: @secondary-color;
+}
+.card-score .team .score .score-away {
+  color: @secondary-color;
+}
+.card-score .team .score .score-home {
+  color: @contrast-color;
+}
+.default-btn {
+  border: 0;
+  color: @secondary-color;
+}
+.default-btn:hover {
+  .btn-primary-active-color();
+}
+.card-score .btn-wrap .no-url:hover {
+  .btn-primary-active-color();
+}
+.card-score .desc {
+  color: @secondary-color;
+}
+.primary-btn {
+  border: 0;
+  .btn-primary-color();
+}
+.primary-btn:hover {
+  .btn-primary-active-color();
+}
+html .lazy-img img {
+  background: lighten(@primary-color, 5%);
+}
+.card-score .team .team-info .team-name {
+  color: @secondary-color;
+}
+.score-contain .allmatch {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+/* 精彩推荐 */
+.game-content .match-box .main-title {
+  color: @panel-title-color;
+}
+.card-video .video-wrap .video-info .title a {
+  color: @video-title-color;
+}
+.card-video .video-wrap .video-info .title a:hover {
+  color: @video-title-hover-color;
+}
+.card-video .video-wrap .video-info .detail .item {
+  color: @video-subtitle-color;
+}
+.user-contain .page-btn {
+  border: 0;
+  .btn-primary-color();
+}
+.user-contain .page-btn:hover {
+  .btn-primary-active-color();
+}
+.user-contain .card-user .user-wrap .user-name a {
+  color: @secondary-color;
+}
+.game-content .match-box .sub-title {
+  color: @panel-title-color;
+}
+.box-match .matchlist-contain .match-wrap .matchlist-title a {
+  color: @video-title-color;
+}
+.box-match .matchlist-contain .match-wrap .match-time {
+  color: @video-subtitle-color;
+}
+.box-match .matchlist-contain .more-match {
+  border: 0;
+  .btn-primary-color();
+}
+.box-match .matchlist-contain .more-match:hover {
+  .btn-primary-active-color();
+}
+.box-match .newslist-contain .news-wrap .news-title a {
+  color: @video-title-color;
+}
+.box-match .newslist-contain .news-wrap .news-title a:hover {
+  color: @video-title-hover-color;
+}
+.box-match .newslist-contain .news-wrap .news-time {
+  color: @video-subtitle-color;
+}
+.box-match .newslist-contain .news-wrap .news-title .hot-label {
+  .btn-contrast-color();
+}
+/* 赛程 */
+.schedule-filter .filter-contain {
+  border: 0;
+  background: lighten(@primary-color, 5%);
+}
+.schedule-filter .filter-top {
+  color: @panel-title-color;
+  border-bottom: 0;
+  background-color: lighten(@primary-color, 15%);
+}
+.schedule-filter .filter-content .content-all div {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-filter .filter-content .content-all div.active {
+  border: 0;
+  .btn-primary-active-color();
+}
+.schedule-contain .time-all {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-contain .schedule-time .time {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-contain .schedule-time .time-contain {
+  border: 0;
+  background: lighten(@primary-color, 5%);
+}
+.schedule-contain .schedule-time .time .time-aleft {
+  border-color: transparent @primary-color transparent transparent;
+}
+.schedule-contain .schedule-time .time .time-aright {
+  border-color: transparent transparent transparent @primary-color;
+}
+.schedule-contain .schedule-time .time-contain li.data .week {
+  color: @base-text-color;
+}
+.schedule-contain .schedule-time .time-contain li.data .date {
+  color: @secondary-color;
+}
+.schedule-contain .schedule-time .time-contain li.active {
+  background-color: @secondary-hover-color;
+}
+.schedule-contain .schedule-time .time-contain li.active .week {
+  color: @base-text-hover-color;
+}
+.schedule-contain .schedule-time .time-contain li.active .date {
+  color: @base-text-hover-color;
+}
+.schedule-contain .schedule-time .time-contain li .contain-item {
+  border-right: 1px solid lighten(@primary-color, 2%);
+}
+.schedule-contain .contain-top .hasDatepicker {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-contain .contain-top .hasDatepicker .icon-rili {
+  color: @primary-color;
+}
+.schedule-list .list-item {
+  color: @secondary-color;
+  border: 1px solid @secondary-color;
+}
+.schedule-list .match-time.over,
+.schedule-list .match-time.over .time-hours {
+  color: @secondary-color;
+}
+.schedule-list .match-time .time-status.over {
+  color: @secondary-color;
+}
+.schedule-list .match-time {
+  color: @base-text-color;
+}
+.schedule-list .match-time .time-hours {
+  color: @base-text-color;
+}
+.schedule-list .match-time .time-status.live {
+  color: @contrast-color;
+}
+.schedule-list .match-time .time-status {
+  color: @secondary-hover-color;
+}
+.schedule-list .match-status.over {
+  background-color: @secondary-color;
+}
+.schedule-list .match-status {
+  background-color: @secondary-hover-color;
+}
+.schedule-list .match-status.live {
+  background-color: @contrast-color;
+}
+.schedule-list .match-ranks .ranks-score .score-away {
+  color: @secondary-color;
+}
+.schedule-list .match-ranks .ranks-score .score-state {
+  color: @secondary-color;
+}
+.schedule-list .match-ranks .ranks-score .score-home {
+  color: @contrast-color;
+}
+.schedule-list .match-operate.live {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-list .match-operate.live:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+.schedule-list .match-operate {
+  border: 0;
+  .btn-primary-color();
+}
+.schedule-list .match-operate:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+.schedule-list .match-operate.single-collect {
+  border: 0;
+  .btn-ghost-color();
+}
+.schedule-list .match-operate.single-collect:hover {
+  border: 0;
+  .btn-ghost-active-color();
+}
+.schedule-list .match-operate.no-url {
+  color: @secondary-color;
+}
+.schedule-list .match-operate.no-url.over {
+  background: none;
+  color: @secondary-color;
+}
+.schedule-list .special-game-info .special-game-name {
+  color: @secondary-color;
+}
+.schedule-list .match-line {
+  background-color: @secondary-color;
+}
+/* 预测 */
+.single-data-wrap .match-info-title {
+  color: @base-text-color;
+}
+.single-data-wrap .match-info-title a {
+  color: @base-text-color;
+}
+.single-data-wrap .match-info-title a:hover {
+  color: @base-text-hover-color;
+}
+.single-data-wrap .match-info-title .team {
+  color: @base-text-color;
+}
+.competition-content .competition-title {
+  color: @panel-title-color;
+}
+.competition-content .part-title > h3 {
+  color: @video-title-color;
+}
+.competition-content .competition-menu {
+  color: @video-subtitle-color;
+}
+.competition-group ul {
+  border: 1px solid @secondary-color;
+}
+.competition-group li {
+  border-bottom: 1px solid @secondary-color;
+}
+.competition-group .season-item .season-info .season-name {
+  color: @video-title-color;
+}
+.competition-group .season-item .season-info .saeson-time {
+  color: @video-subtitle-color;
+}
+.competition-group .team-vs-team .team-name {
+  color: @secondary-color;
+}
+.competition-group .team-vs-team .team-score {
+  color: @secondary-color;
+}
+.competition-group .team-vs-team .team-score .team-win {
+  color: @contrast-color;
+}
+.competition-history .all {
+  border: 0;
+  .btn-primary-color();
+}
+.competition-history .all span,
+.competition-history .all .icon-general_enterbig {
+  color: @primary-color;
+}
+.competition-history .all:hover {
+  .btn-primary-active-color();
+}
+.competition-history .all:hover span,
+.competition-history .all:hover .icon-general_enterbig {
+  color: @base-text-hover-color;
+}
+.competition-history .msg-wrap {
+  color: @secondary-color;
+}
+.competition-history .msg-wrap .team-name {
+  color: @secondary-color;
+}
+.competition-history .team-msg .score {
+  color: @secondary-color;
+}
+.competition-history .team-msg .score .win-team {
+  color: @contrast-color;
+}
+/* 视频库 */
+.library-contain .search-sort .sort-list li {
+  color: @secondary-color;
+}
+.library-contain .search-sort .sort-list li.active {
+  .btn-primary-active-color();
+}
+.game-menu ul li {
+  color: @secondary-color;
+}
+.game-menu ul li.active {
+  .btn-primary-active-color();
+}
+.filter-wrap .toggle-open-select {
+  border: 0;
+  .btn-primary-color();
+}
+.filter-wrap .toggle-open-select .icon-ic {
+  color: @primary-color;
+}
+.game-menu .more {
+  border: 0;
+  .btn-primary-color();
+}
+.game-menu .more .icon-ic {
+  color: @primary-color;
+}
+.filter-wrap .select-sort li {
+  .btn-ghost-color();
+}
+.filter-wrap .select-sort li .icon-guanbi {
+  color: @secondary-color;
+}
+/* 大数据 */
+.game-content .switchBar .switch-item {
+  .btn-primary-color();
+}
+.game-content .switchBar .switch-item.active {
+  .btn-primary-active-color();
+}
+.game-content .team-box .title {
+  color: @panel-title-color;
+}
+.game-content .team-box .subtitle {
+  color: @secondary-color;
+}
+.game-content .headline .getmore {
+  border: 0;
+  .btn-primary-color();
+}
+.game-content .headline .getmore:hover {
+  .btn-primary-active-color();
+}
+.game-content .team-box .infobox {
+  border: 1px solid @secondary-color;
+  background: lighten(@primary-color, 5%);
+}
+.game-content .team-box .team-item .team-name,
+.game-content .team-box .team-item .team-name.selected {
+  background: lighten(@primary-color, 15%);
+}
+.game-content .team-box .team-item .team-name p,
+.game-content .team-box .team-item .team-name.selected p {
+  color: @base-text-color;
+}
+.game-content .team-box .team-item.selected-0 {
+  border-right: 1px solid @secondary-color;
+}
+.game-content .team-box .team-item.selected-1,
+.game-content .team-box .team-item.selected-2 {
+  border-left: 1px solid @secondary-color;
+  border-right: 1px solid @secondary-color;
+}
+.game-content .team-box .team-item.selected-normal {
+  border-top: 6px solid @secondary-color;
+  border-left: 1px solid @secondary-color;
+  border-right: 1px solid @secondary-color;
+}
+.game-content .team-box .team-item.selected-9 {
+  border-top: 6px solid @secondary-color;
+  border-left: 1px solid @secondary-color;
+}
+.game-content .ring-box .win-count {
+  color: @base-text-color;
+}
+.game-content .ring-box .inset-text {
+  color: @secondary-color;
+}
+.game-content .ring-text {
+  color: @secondary-color;
+}
+.game-content .team-box .team-infodata .infodata-box .score-title {
+  color: @secondary-color;
+}
+.game-content .team-box .team-infodata .infodata-box .score {
+  color: @base-text-color;
+}
+.game-content .team-box .team-detail .player-info .player-textbox .name {
+  color: @base-text-color;
+}
+.game-content .team-box .team-detail .player-info .player-textbox .pos {
+  color: @secondary-color;
+}
+.game-content .Ptitle {
+  color: @panel-title-color;
+}
+.game-content .playrank-box .single-rank .title {
+  color: @panel-title-color;
+}
+.game-content .playrank-box .single-rank .single-rank-box {
+  border: 1px solid @secondary-color;
+  background: lighten(@primary-color, 5%);
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .top-three
+  .single-top
+  .logobox
+  .playname {
+  color: @base-text-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .top-three
+  .single-top
+  .logobox
+  .belongteam {
+  color: @secondary-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .top-three
+  .single-top
+  .rankboxtitle {
+  color: @secondary-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .top-three
+  .single-top
+  .countnum {
+  color: @base-text-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .ohter-box
+  .ohter-rank-item
+  .other-count {
+  color: @video-title-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .ohter-box
+  .ohter-rank-item
+  .player-info
+  .name {
+  color: @video-title-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .ohter-box
+  .ohter-rank-item
+  .player-info
+  .position {
+  color: @video-subtitle-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .ohter-box
+  .ohter-rank-item
+  .killdata-container
+  .countnum {
+  color: @video-title-color;
+}
+.game-content
+  .playrank-box
+  .single-rank
+  .single-rank-box
+  .ohter-box
+  .ohter-rank-item
+  .killdata-container
+  .rankboxtitle {
+  color: @video-subtitle-color;
+}
+/* 战队 */
+.bili-game-local .game-content .switch-item {
+  .btn-primary-color();
+}
+.bili-game-local .game-content .switch-item.active {
+  .btn-primary-active-color();
+}
+.bili-game-local .game-content .team-container .itembox {
+  border: 1px solid @secondary-color;
+  background: lighten(@primary-color, 5%);
+}
+.bili-game-local .game-content .team-container .short-tn {
+  color: @video-title-color;
+}
+.bili-game-local .game-content .team-container .tn {
+  color: @video-subtitle-color;
+}
+/* 预测 */
+.bili-game-local .bili-select {
+  border: 0;
+  .btn-primary-color();
+}
+.bili-game-local .time-all {
+  border: 0;
+  .btn-primary-color();
+}
+.bili-game-local .time-all.active {
+  border: 0;
+  .btn-primary-active-color();
+}
+.bili-game-local .schedule-time .time {
+  border: 0;
+  .btn-primary-color();
+}
+.bili-game-local .schedule-time .time:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+.bili-game-local .schedule-time .time .time-aleft {
+  border-color: transparent @primary-color transparent transparent;
+}
+.bili-game-local .schedule-time .time .time-aright {
+  border-color: transparent transparent transparent @primary-color;
+}
+.bili-game-local .schedule-time .time-contain {
+  border: 0;
+  background: lighten(@primary-color, 5%);
+}
+.bili-game-local .schedule-time .time-contain li.active {
+  .btn-primary-active-color();
+}
+.bili-game-local .schedule-time .time-contain li .contain-item {
+  border-right: 1px solid @secondary-color;
+}
+.bili-game-local .schedule-time .time-contain li .week {
+  color: @base-text-color;
+}
+.bili-game-local .schedule-time .time-contain li .date {
+  color: @secondary-color;
+}
+.bili-game-local .schedule-time .time-contain li.active .week {
+  color: @base-text-hover-color;
+}
+.bili-game-local .schedule-time .time-contain li.active .date {
+  color: @base-text-hover-color;
+}
+.bili-game-local .competition-list > li {
+  border: 1px solid @secondary-color;
+  background: lighten(@primary-color, 5%);
+}
+.bili-game-local .competition-title .competition-title-season {
+  color: @secondary-color;
+}
+.bili-game-local .competition-title .competition-title-center .team-name {
+  color: @secondary-color;
+}
+.bili-game-local .competition-title .competition-title-center .team-vs {
+  color: @secondary-color;
+}
+.bili-game-local .competition-title .competition-title-between p span {
+  color: @secondary-color;
+}
+.bili-game-local .part-title > h3 {
+  color: @video-title-color;
+}
+.bili-game-local .competition-menu {
+  color: @secondary-color;
+}

@@ -1,0 +1,628 @@
+@import "../../variables.less";
+
+/* 课堂 */
+.banner-slider .banner-item:hover {
+  color: @base-text-hover-color;
+}
+.banner-slider .banner-item.active {
+  background-image: linear-gradient(
+    270deg,
+    rgba(11, 163, 149, 0),
+    @secondary-color
+  );
+}
+.banner-slider .banner-item:hover .bannder-slider-icon.checked {
+  display: block;
+}
+.banner-slider .banner-item:hover .bannder-slider-icon.hover {
+  display: none;
+}
+.player-wrapper .link .mask .link-button {
+  background: @secondary-color;
+}
+.squirtle-progress-timeline {
+  background: @secondary-color;
+}
+.nav-wrapper .list .item {
+  color: @tab-text-color;
+}
+.nav-wrapper .list .item:hover {
+  color: @tab-text-hover-color;
+}
+.nav-wrapper .myClassroom {
+  color: @secondary-color;
+}
+.nav-wrapper .myClassroom:hover {
+  color: @secondary-hover-color;
+}
+.classroom-wrapper .block-title {
+  color: @panel-title-color;
+}
+.classroom-wrapper .block-list-item-title {
+  color: @video-title-color;
+}
+.classroom-wrapper .block-list-item-title:hover {
+  color: @video-title-hover-color;
+}
+.classroom-wrapper .block-list-item-desc {
+  color: @video-subtitle-color;
+}
+.classroom-wrapper .price-pre {
+  color: @contrast-color;
+}
+.classroom-wrapper .block-list-item-price {
+  color: @contrast-color;
+}
+.classroom-wrapper .block-list-item-price.line {
+  color: @secondary-color;
+}
+.classroom-wrapper .block-list-item-price.origin {
+  color: @secondary-color;
+}
+.classroom-wrapper .block-page-progress {
+  color: @secondary-color;
+}
+.block-list .slider-contro .slider-next:hover,
+.block-list .slider-contro .slider-prev:hover {
+  background-color: @secondary-hover-color;
+}
+.classroom-wrapper .rank .title {
+  color: @panel-title-color;
+}
+.classroom-wrapper .rank .rank-index {
+  .rank-other-color();
+}
+.classroom-wrapper .rank .rank-index.hot {
+  .rank-top-color();
+}
+.classroom-wrapper .rank .rank-title {
+  color: @video-title-color;
+}
+.classroom-wrapper .rank .list:hover .rank-title {
+  color: @video-title-hover-color;
+}
+.classroom-wrapper .rank .rank-updateInfo {
+  color: @video-subtitle-color;
+}
+/* 即将上线 */
+.classroom-wrapper .coming-soon-wrapper .block-title {
+  color: @panel-title-color;
+}
+.classroom-wrapper .time-line-wrapper .line {
+  background-color: @secondary-color;
+}
+.classroom-wrapper .time-line-wrapper .time {
+  color: @secondary-color;
+}
+.classroom-wrapper .time-line-wrapper .line .point-wrapper {
+  background-color: @secondary-color;
+}
+.classroom-wrapper .time-line-wrapper .line .point {
+  background-color: @secondary-hover-color;
+}
+.classroom-wrapper .coming-soon-wrapper.upComming-wrapper .title {
+  color: @video-title-color;
+}
+.classroom-wrapper .tags {
+  background: @primary-color;
+  color: @video-subtitle-color;
+}
+.classroom-wrapper .btn-follow,
+.classroom-wrapper .btn-follow:hover {
+  .btn-primary-active-color();
+}
+/* 我的课程 */
+.cheese-mine .wrap {
+  margin-top: 20px;
+}
+.cheese-mine .wrap .left .tabbar .tab_item:hover {
+  color: @secondary-color;
+}
+.cheese-mine .wrap .left .tabbar .router-link-active:hover,
+.cheese-mine .wrap .left .tabbar .router-link-active {
+  .btn-primary-active-color();
+}
+.cheese-mine .exchange .submit {
+  .btn-primary-active-color();
+}
+.cheese-mine .tickets .nav .navtab_active {
+  color: @secondary-color;
+}
+/* 播放页 */
+.bilibili-player {
+  box-shadow: 0 0 8px darken(@primary-color, 10%);
+}
+.bilibili-player-video-toast-item.bilibili-player-video-toast-pay
+  .video-float-hint-btn.hint-green {
+  color: @secondary-color;
+}
+.bilibili-player-video-toast-item.bilibili-player-video-toast-pay
+  .video-float-hint-btn.hint-green:hover {
+  color: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bui-switch
+  .bui-switch-input:checked
+  + .bui-switch-label
+  .bui-switch-body {
+  background: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bui-switch
+  .bui-switch-input:checked
+  + .bui-switch-label
+  .bui-switch-body
+  .bui-switch-dot {
+  color: @secondary-hover-color;
+  fill: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bui-switch
+  .bui-switch-input:checked
+  + .bui-switch-label
+  .bui-switch-body
+  .bui-switch-dot
+  path {
+  fill: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bilibili-player-video-sendbar
+  .bilibili-player-video-btn:hover,
+.bilibili-player.bilibili-player-theme-green
+  .bilibili-player-video-sendbar
+  .bilibili-player-video-danmaku-root
+  .bilibili-player-video-danmaku-setting:hover {
+  fill: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bilibili-player-video-sendbar
+  .bilibili-player-video-inputbar
+  .bilibili-player-video-hint
+  a:hover {
+  color: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green
+  .bilibili-player-video-sendbar
+  .bilibili-player-video-inputbar
+  .bilibili-player-video-hint
+  a:hover
+  path {
+  fill: @secondary-hover-color;
+}
+.bilibili-player.bilibili-player-theme-green .bui-button.bui-button-blue {
+  background-color: @secondary-color;
+}
+.bilibili-player.bilibili-player-theme-green .bui-button.bui-button-blue:hover {
+  background-color: @secondary-hover-color;
+}
+.video-toolbar {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.video-toolbar .ops > span {
+  color: @secondary-color;
+}
+.video-toolbar .ops > span i {
+  color: @secondary-color;
+}
+.video-toolbar .ops > span.on,
+.video-toolbar .ops > span.on i,
+.video-toolbar .ops > span:hover,
+.video-toolbar .ops > span:hover i {
+  color: @secondary-hover-color;
+}
+.video-toolbar .appeal-text {
+  color: @secondary-color;
+}
+.video-toolbar .appeal-text:hover {
+  color: @secondary-hover-color;
+}
+.video-toolbar .more [data-icon-name="more_i"] {
+  color: @secondary-color;
+}
+.season-info {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.season-info .title {
+  color: @video-title-color;
+}
+.season-info .stat {
+  color: @video-subtitle-color;
+}
+.season-info .desc {
+  color: @video-subtitle-color;
+}
+.season-owner .info h3 a {
+  color: @secondary-color;
+}
+.season-owner .info .desc {
+  color: @secondary-color;
+}
+.season-tabs .tabs {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.season-tabs .tabs a {
+  color: @tab-text-color;
+}
+.season-tabs .tabs a.on {
+  color: @tab-text-hover-color;
+  border-bottom: 2px solid @tab-text-hover-color;
+}
+.season-detail .content-img {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.season-detail .faq .title,
+.season-detail .note .title {
+  color: @base-text-color;
+}
+.season-detail .faq .content,
+.season-detail .note .content {
+  color: @base-text-color;
+}
+.season-detail .faq.faq,
+.season-detail .note.faq {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.season-detail .faq .content a,
+.season-detail .note .content a {
+  color: @secondary-hover-color;
+}
+.v-wrap .r-con .season-pay-btn {
+  background: @secondary-hover-color;
+}
+.v-wrap .r-con .season-pay-btn:hover {
+  background: @secondary-hover-color;
+}
+.notice_content {
+  background: lighten(@primary-color, 5%);
+}
+.notice_btn {
+  background: lighten(@primary-color, 5%);
+}
+.notice_content-txt {
+  color: @secondary-color;
+}
+.notice_content-line {
+  background: linear-gradient(
+    180deg,
+    transparent 6px,
+    @secondary-color 8px,
+    transparent 14px,
+    @secondary-color 16px,
+    transparent 22px,
+    @secondary-color 24px,
+    transparent 30px,
+    @secondary-color 32px,
+    transparent 38px
+  );
+}
+.notice_btn.canReceive {
+  color: @secondary-color;
+}
+/* 弹幕列表 */
+.main-container .plp-r .danmaku-box .danmaku-wrap {
+  background: transparent;
+}
+.v-wrap .danmaku-wrap {
+  background: transparent;
+}
+.player-auxiliary-area {
+  background-color: transparent;
+}
+.bui-collapse .bui-collapse-header {
+  background: lighten(@primary-color, 5%);
+  color: @secondary-color;
+}
+.bui-collapse .bui-collapse-header .bui-collapse-arrow {
+  color: @secondary-color;
+}
+.player-auxiliary-area .player-auxiliary-filter {
+  background: transparent;
+}
+.player-auxiliary-area .player-auxiliary-filter-title {
+  color: @secondary-color;
+}
+.player-auxiliary-area .player-auxiliary-filter-menu {
+  color: @secondary-color;
+}
+.player-auxiliary-area .player-auxiliary-filter-menu:hover {
+  color: @secondary-hover-color;
+}
+.player-auxiliary.player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-filter-menu:hover,
+.player-auxiliary.player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-filter
+  .player-auxiliary-setting-menu-wrap
+  .player-auxiliary-setting-menu-list:hover {
+  color: @secondary-hover-color;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-load-status {
+  background: lighten(@primary-color, 7%);
+  color: #fff;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-load-status.disabled {
+  color: @secondary-color;
+}
+/* 弹幕列表--头 */
+.player-auxiliary-area
+  .player-auxiliary-danmaku
+  .player-auxiliary-danmaku-function
+  [class*="player-auxiliary-danmaku-btn-"] {
+  color: #fff;
+  background: lighten(@primary-color, 8%);
+}
+/* 弹幕列表--项 */
+.player-auxiliary-area
+  .player-auxiliary-danmaku
+  .player-auxiliary-danmaku-function {
+  background-color: lighten(@primary-color, 8%);
+}
+.danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap {
+  background-color: lighten(@primary-color, 8%);
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  span.danmaku-info-time {
+  color: #fff;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  span.danmaku-info-danmaku {
+  color: #fff;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  span.danmaku-info-date {
+  color: #fff;
+}
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-block-btn,
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-protect-btn,
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-report-btn {
+  border: 0;
+  .btn-primary-color();
+}
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-block-btn:hover,
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-protect-btn:hover,
+.danmaku-wrap
+  .player-auxiliary-theme-green
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row
+  .danmaku-info-report-btn:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row.bpui-selected,
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row.bpui-selected
+  > span,
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row.bpui-selecting,
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .player-auxiliary-danmaku-list
+  .danmaku-info-row.bpui-selecting
+  > span {
+  background-color: lighten(@primary-color, 5%);
+}
+.bui-button.bui-button-blue,
+.bui-button.bui-button-gray3:hover {
+  background-color: @secondary-color;
+}
+/* 弹幕列表--滚动条 */
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .bscroll-vertical-scrollbar {
+  padding: 1px;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .bscroll-indicator {
+  position: static;
+  width: 6px !important;
+  border-radius: 10px !important;
+}
+.player-auxiliary-area
+  .player-auxiliary-bscrollbar
+  .bscroll-vertical-scrollbar.mousedown,
+.player-auxiliary-area
+  .player-auxiliary-bscrollbar:hover
+  .bscroll-vertical-scrollbar {
+  background: darken(@primary-color, 4%) !important;
+}
+.player-auxiliary-area .player-auxiliary-bscrollbar .bscroll-indicator {
+  background: lighten(@primary-color, 2%) !important;
+}
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap
+  .bscroll-vertical-scrollbar.mousedown,
+.danmaku-wrap
+  .player-auxiliary-area
+  .player-auxiliary-danmaku-wrap:hover
+  .bscroll-vertical-scrollbar {
+  background: darken(@primary-color, 4%) !important;
+}
+/* 弹幕列表--查看历史弹幕 */
+.danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-btn-footer {
+  background: lighten(@primary-color, 5%);
+}
+.bui-button.bui-button-gray2 {
+  color: @secondary-color;
+  background-color: lighten(@primary-color, 5%);
+}
+.bui-button.bui-button-gray2:hover {
+  .btn-primary-active-color();
+}
+/* 广告 */
+.vcd .info .title {
+  color: @video-title-color !important;
+}
+.vcd .info .rest {
+  color: @secondary-color !important;
+}
+.vcd .info .rest .mark > span {
+  border-color: @secondary-color !important;
+}
+/* 视频选集 */
+.r-con {
+  .multi-page {
+    background: lighten(@primary-color, 5%);
+  }
+  .multi-page .head-con h3 {
+    color: @secondary-color;
+  }
+  .multi-page .head-con .range-box i {
+    color: @secondary-color;
+  }
+  .multi-page .head-con .range-box i:hover {
+    color: @secondary-hover-color;
+  }
+  .multi-page .head-con .range-box .cur-page {
+    color: @secondary-color;
+  }
+  .multi-page .list-box .list-box-li a.part_link {
+    color: #fff;
+  }
+  .multi-page .list-box .list-box-li .eplay_data {
+    color: #fff;
+  }
+  .multi-page .cur-list .list-box li.watched a.part_link {
+    color: darken(@primary-color, 5%);
+  }
+  .multi-page .cur-list .list-box li.on {
+    background: @secondary-hover-color;
+  }
+  .multi-page .cur-list .list-box li.on a.part_link {
+    color: #fff;
+  }
+  .multi-page .cur-list .list-box li.on i {
+    color: #fff;
+  }
+  .multi-page .cur-list .list-box li:hover {
+    background: @secondary-hover-color;
+    color: #fff;
+  }
+  .multi-page .cur-list .list-box li:hover a.part_link {
+    color: #fff;
+  }
+  .multi-page .cur-list .module-box li {
+    .btn-ghost-color();
+  }
+  .multi-page .cur-list .module-box li.on {
+    .btn-ghost-active-color();
+  }
+  .multi-page .cur-list .module-box li a.part_link {
+    color: @secondary-color;
+  }
+  .multi-page .cur-list .module-box li:hover {
+    .btn-ghost-active-color();
+  }
+  .multi-page .cur-list .module-box li:hover a.part_link {
+    color: #fff;
+  }
+  .multi-page .cur-list .list-box li.watched .duration {
+    color: darken(@primary-color, 5%);
+  }
+  .multi-page .cur-list .list-box li .duration {
+    color: #fff;
+  }
+
+  .pay-label {
+    .btn-ghost-color();
+  }
+}
+/* 相关课程 */
+.r-con {
+  .title {
+    color: @panel-title-color;
+  }
+  .main_title {
+    color: @video-title-color;
+  }
+  .main_updateInfo,
+  .main_watchInfo {
+    color: @video-subtitle-color;
+  }
+  .main_watchInfo_line {
+    border-left: 1px solid @video-subtitle-color;
+  }
+}
+/* 课程资料 */
+.r-con {
+  .resource {
+    background: lighten(@primary-color, 5%);
+  }
+  .resource_title {
+    color: @secondary-color;
+  }
+  .resource_tip {
+    color: @secondary-color;
+  }
+  .download_item {
+    background: lighten(@primary-color, 15%);
+  }
+  .download_item_title {
+    color: @base-text-color;
+  }
+}

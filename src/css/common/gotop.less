@@ -1,0 +1,111 @@
+@import "../../variables.less";
+
+/* 返回顶部 */
+.history-wrap .go-top-m .go-top,
+.go-top-m .go-top {
+  border: 0;
+  background-color: @secondary-color;
+}
+.history-wrap .go-top-m .go-top:hover,
+.go-top-m .go-top:hover {
+  background-color: @secondary-hover-color;
+  border-color: #fff;
+}
+.float-nav .nav-menu .item,
+.main-container .nav-tools .tool-item {
+  border: 0;
+  .btn-primary-color;
+}
+.float-nav .nav-menu .item:hover,
+.main-container .nav-tools .tool-item:hover {
+  .btn-primary-active-color;
+}
+.back-top-tools .tool-item {
+  border: 0;
+  .btn-primary-color();
+  polygon {
+    fill: @primary-color;
+  }
+}
+.back-top-tools .tool-item:hover {
+  .btn-primary-active-color();
+  polygon {
+    fill: @base-text-hover-color;
+  }
+}
+.popular-video-container .back-top-btn,
+.rank-container .back-top-btn {
+  border: 0;
+  .btn-primary-color();
+  .arrow-icon {
+    color: @primary-color;
+  }
+}
+.popular-video-container .back-top-btn:hover,
+.rank-container .back-top-btn:hover {
+  border: 0;
+  .btn-primary-active-color();
+  .arrow-icon {
+    color: @base-text-hover-color;
+  }
+}
+.right-side-bar .to-comment {
+  border: 0;
+  .btn-primary-color();
+  background-image: url(https://s3.ax1x.com/2020/11/26/DwoVeg.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: 14px 15px;
+  &:hover {
+    background-color: @secondary-hover-color;
+  }
+}
+.to-top,
+.right-side-bar .to-top {
+  border: 0;
+  background-color: @secondary-color;
+  background-image: url(https://s3.ax1x.com/2020/11/26/DwoNk9.png);
+  background-repeat: no-repeat;
+  background-position: 5px;
+  &:hover {
+    background-color: @secondary-hover-color;
+    background-position: -60px;
+  }
+}
+.classroom-innerWrapper .backTop-item {
+  border: 0;
+  .btn-primary-color();
+  .buyListBar-desc--txt,
+  .officialAccount-desc--txt {
+    color: @primary-color;
+  }
+  .arrow-top.backToTop {
+    border-top: 3px solid @primary-color;
+    border-right: 3px solid @primary-color;
+  }
+  &:hover {
+    border: 0;
+    .btn-primary-active-color();
+    .buyListBar-desc--txt,
+    .officialAccount-desc--txt {
+      color: @base-text-hover-color;
+    }
+    .arrow-top.backToTop {
+      border-top: 3px solid @base-text-hover-color;
+      border-right: 3px solid @base-text-hover-color;
+    }
+  }
+}
+.v-wrap {
+  .link {
+    border: 0;
+    .btn-primary-color();
+    &:hover {
+      border: 0;
+      .btn-primary-active-color();
+    }
+  }
+  .link.last {
+    border-top: 0;
+  }
+}

@@ -1,0 +1,223 @@
+@import "./variables.less";
+
+@-moz-document domain("bilibili.com") {
+  @import "./css/common/base.less";
+  @import "./css/common/comment.less";
+  @import "./css/common/footer.less";
+  @import "./css/common/gotop.less";
+  @import "./css/common/header.less";
+  @import "./css/common/pagination.less";
+  @import "./css/common/subpage.less";
+  @import "./css/icon/icon.less";
+}
+
+@-moz-document url-prefix("https://t.bilibili.com/pages/nav/index_new") {
+  /* 动态弹窗 */
+  @import "./css/page/dynamicModal.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/page-proxy/game-nav.html") {
+  /* 游戏中心弹窗 */
+  @import "./css/page/gameModal.less";
+}
+
+@-moz-document url-prefix("https://live.bilibili.com/blackboard/dropdown-menu.html") {
+  /* 直播弹窗 */
+  @import "./css/page/liveModal.less";
+}
+
+@-moz-document url-prefix("https://manga.bilibili.com/eden/bilibili-nav-panel.html") {
+  /* 漫画弹窗 */
+  @import "./css/page/mangaModal.less";
+}
+
+@-moz-document url-prefix("https://account.bilibili.com"),
+url-prefix("https://passport.bilibili.com") {
+  /* 个人中心 */
+  @import "./css/page/account.less";
+}
+
+@-moz-document url-prefix("https://pay.bilibili.com") {
+  /* 我的钱包 */
+  @import "./css/page/pay.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/account/history") {
+  /* 播放历史页面 */
+  @import "./css/page/history.less";
+}
+
+@-moz-document url-prefix("https://message.bilibili.com") {
+  /* 消息中心页面 */
+  @import "./css/page/message.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/popular") {
+  /* 排行榜 */
+  @import "./css/page/ranking.less";
+}
+
+@-moz-document url-prefix("https://space.bilibili.com/") {
+  /* 个人空间 */
+  @import "./css/page/space.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com") {
+  /* 首页 */
+  @import "./css/page/home.less";
+}
+
+@-moz-document url-prefix("https://search.bilibili.com") {
+  /* 搜索页 */
+  @import "./css/page/search.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/video"),
+url-prefix("https://www.bilibili.com/bangumi/play") {
+  /* 播放页 */
+  @import "./css/page/video.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/douga"),
+url-prefix("https://www.bilibili.com/v/douga") {
+  /* 子栏目--动画 */
+  @import "./css/page/douga.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/music"),
+url-prefix("https://www.bilibili.com/v/music") {
+  /* 子栏目--音乐 */
+  @import "./css/page/music.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/audio"),
+url-prefix("https://www.bilibili.com/v/audio") {
+  /* 子栏目--音频 */
+  @import "./css/page/audio.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/rap"),
+url-prefix("https://www.bilibili.com/v/rap") {
+  /* 子栏目--rap */
+  @import "./css/page/rap.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/dance"),
+url-prefix("https://www.bilibili.com/v/dance") {
+  /* 子栏目--舞蹈 */
+  @import "./css/page/dance.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/technology"),
+url-prefix("https://www.bilibili.com/v/technology") {
+  /* 子栏目--知识 */
+  @import "./css/page/technology.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/life"),
+url-prefix("https://www.bilibili.com/v/life") {
+  /* 子栏目--生活 */
+  @import "./css/page/life.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/fashion"),
+url-prefix("https://www.bilibili.com/v/fashion") {
+  /* 子栏目--时尚 */
+  @import "./css/page/fashion.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/ent"),
+url-prefix("https://www.bilibili.com/v/ent") {
+  /* 子栏目--娱乐 */
+  @import "./css/page/ent.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/cinema"),
+url-prefix("https://www.bilibili.com/cinema") {
+  /* 子栏目--放映厅 */
+  @import "./css/page/cinema.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/documentary"),
+url-prefix("https://www.bilibili.com/documentary") {
+  /* 子栏目--纪录片 */
+  @import "./css/page/documentary.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/movie"),
+url-prefix("https://www.bilibili.com/movie"),
+url-prefix("https://www.bilibili.com/v/blackboard"),
+url-prefix("https://www.bilibili.com/blackboard") {
+  /* 子栏目--电影 */
+  @import "./css/page/movie.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/tv"),
+url-prefix("https://www.bilibili.com/tv") {
+  /* 子栏目--电视剧 */
+  @import "./css/page/tv.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/variety"),
+url-prefix("https://www.bilibili.com/variety") {
+  /* 子栏目--综艺 */
+  @import "./css/page/variety.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/anime"),
+url-prefix("https://www.bilibili.com/anime") {
+  /* 子栏目--番剧 */
+  @import "./css/page/anime.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/guochuang"),
+url-prefix("https://www.bilibili.com/guochuang") {
+  /* 子栏目--国创 */
+  @import "./css/page/guochuang.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/game"),
+url-prefix("https://www.bilibili.com/game") {
+  /* 子栏目--游戏 */
+  @import "./css/page/game.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/digital"),
+url-prefix("https://www.bilibili.com/digital") {
+  /* 子栏目--数码 */
+  @import "./css/page/digital.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/kichiku"),
+url-prefix("https://www.bilibili.com/kichiku") {
+  /* 子栏目--鬼畜 */
+  @import "./css/page/kichiku.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/information"),
+url-prefix("https://www.bilibili.com/information") {
+  /* 子栏目--资讯 */
+  @import "./css/page/information.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/cinephile"),
+url-prefix("https://www.bilibili.com/cinephile") {
+  /* 子栏目--影视 */
+  @import "./css/page/cinephile.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v/food"),
+url-prefix("https://www.bilibili.com/food") {
+  /* 子栏目--美食 */
+  @import "./css/page/food.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/read") {
+  /* 专栏 */
+  @import "./css/page/read.less";
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/cheese") {
+  /* 课堂 */
+  @import "./css/page/cheese.less";
+}

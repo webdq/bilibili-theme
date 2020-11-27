@@ -1,0 +1,261 @@
+@import "../../variables.less";
+
+/* 评论 */
+.comment-title-block {
+  color: @panel-title-color;
+}
+.main-container .plp-l .comment-wrapper {
+  border-top: 1px solid lighten(@primary-color, 5%);
+}
+.main-container .plp-l .comment-wrapper .b-head {
+  color: @panel-title-color;
+}
+.bb-comment,
+.comment-bilibili-fold {
+  background: transparent;
+}
+.bb-comment .comment-header .tabs-order li,
+.comment-bilibili-fold .comment-header .tabs-order li {
+  color: @tab-text-color;
+}
+.bb-comment .comment-header .tabs-order li.on,
+.comment-bilibili-fold .comment-header .tabs-order li.on {
+  color: @tab-text-hover-color;
+  border-bottom: 1px solid @tab-text-hover-color;
+}
+.bb-comment .comment-header .tabs-order li:hover,
+.comment-bilibili-fold .comment-header .tabs-order li:hover {
+  color: @tab-text-color;
+}
+.bb-comment .comment-header .tabs-order li.on:hover,
+.comment-bilibili-fold .comment-header .tabs-order li.on:hover {
+  color: @tab-text-hover-color;
+}
+.bb-comment .comment-header .tabs-order li.on:after,
+.comment-bilibili-fold .comment-header .tabs-order li.on:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border: 3px dashed @tab-text-hover-color;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  background: none;
+}
+/* 评论--分页 */
+// .paging-box {
+//   color: #fff;
+// }
+// .paging-box .current,
+// .paging-box .dian,
+// .paging-box .next,
+// .paging-box .prev,
+// .paging-box .tcd-number {
+//   color: #fff;
+// }
+// .paging-box .current {
+//   color: #91aed5;
+// }
+// .paging-box .current:hover,
+// .paging-box .dian:hover,
+// .paging-box .next:hover,
+// .paging-box .prev:hover,
+// .paging-box .tcd-number:hover {
+//   color: #91aed5;
+// }
+/* 评论--输入框 */
+.bb-comment
+  .comment-send
+  .textarea-container
+  textarea::-webkit-input-placeholder,
+.comment-bilibili-fold
+  .comment-send
+  .textarea-container
+  textarea::-webkit-input-placeholder {
+  color: @secondary-color;
+}
+.bb-comment .comment-send .textarea-container textarea:-moz-placeholder,
+.comment-bilibili-fold
+  .comment-send
+  .textarea-container
+  textarea::-moz-placeholder {
+  color: @secondary-color;
+}
+.bb-comment .comment-send .textarea-container textarea::-moz-placeholder,
+.comment-bilibili-fold
+  .comment-send
+  .textarea-container
+  textarea::-moz-placeholder {
+  color: @secondary-color;
+}
+.bb-comment .comment-send .textarea-container textarea:-ms-input-placeholder,
+.comment-bilibili-fold
+  .comment-send
+  .textarea-container
+  textarea:-ms-input-placeholde {
+  color: @secondary-color;
+}
+.bb-comment .comment-send .textarea-container textarea,
+.comment-bilibili-fold .comment-send .textarea-container textarea {
+  background-color: @secondary-color;
+  border-color: @secondary-color;
+  color: #fff;
+}
+.bb-comment .comment-send .textarea-container.error textarea,
+.comment-bilibili-fold .comment-send .textarea-container.error textarea {
+  background-color: @secondary-color;
+}
+.bb-comment .comment-send .textarea-container.focus textarea,
+.bb-comment .comment-send .textarea-container:hover textarea,
+.comment-bilibili-fold .comment-send .textarea-container.focus textarea,
+.comment-bilibili-fold .comment-send .textarea-container:hover textarea {
+  background-color: @secondary-color;
+  border-color: @secondary-color;
+}
+.bb-comment .no-login .baffle,
+.comment-bilibili-fold .no-login .baffle {
+  .btn-primary-color();
+}
+.bb-comment .no-login .baffle .b-btn,
+.comment-bilibili-fold .no-login .baffle .b-btn {
+  .btn-primary-active-color();
+}
+.bb-comment .no-login .baffle .b-btn:hover,
+.comment-bilibili-fold .no-login .baffle .b-btn:hover {
+  .btn-primary-active-color();
+}
+.bb-comment .comment-send .comment-submit,
+.comment-bilibili-fold .comment-send .comment-submit,
+.bb-comment .no-login .comment-submit,
+.comment-bilibili-fold .no-login .comment-submit {
+  background-color: @secondary-color !important;
+  border-color: @secondary-color !important;
+  color: @primary-color !important;
+}
+.bb-comment .comment-send .comment-submit:hover,
+.comment-bilibili-fold .comment-send .comment-submit:hover {
+  background-color: @secondary-hover-color;
+  border-color: @secondary-hover-color;
+  color: #fff;
+}
+.bb-comment .comment-send .comment-emoji,
+.comment-bilibili-fold .comment-send .comment-emoji,
+.bb-comment .no-login .comment-emoji,
+.comment-bilibili-fold .no-login .comment-emoji {
+  border: 0;
+  .btn-primary-color();
+}
+.bb-comment .comment-send .comment-emoji.open,
+.bb-comment .comment-send .comment-emoji:hover,
+.comment-bilibili-fold .comment-send .comment-emoji.open,
+.comment-bilibili-fold .comment-send .comment-emoji:hover {
+  .btn-primary-active-color();
+}
+/* 评论--列表 */
+.comment-m .b-head {
+  color: @panel-title-color;
+}
+.bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn,
+.comment-bilibili-fold
+  .comment-list
+  .list-item
+  .user-face
+  .hot-follow
+  .follow-btn {
+  .btn-primary-color();
+}
+.bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn:hover,
+.comment-bilibili-fold
+  .comment-list
+  .list-item
+  .user-face
+  .hot-follow
+  .follow-btn:hover {
+  .btn-primary-active-color();
+}
+.bb-comment .comment-list .list-item .con,
+.comment-bilibili-fold .comment-list .list-item .con {
+  border-top: 1px solid lighten(@primary-color, 5%);
+}
+.bb-comment .comment-list .list-item .text,
+.comment-bilibili-fold .comment-list .list-item .text {
+  color: @base-text-color;
+}
+.bb-comment .comment-list .list-item .info,
+.comment-bilibili-fold .comment-list .list-item .info {
+  color: @secondary-color;
+}
+.bb-comment .comment-list .list-item .info .plad a,
+.comment-bilibili-fold .comment-list .list-item .info .plad a {
+  color: @secondary-color;
+}
+.bb-comment .comment-list .list-item .info .plad a:hover,
+.comment-bilibili-fold .comment-list .list-item .info .plad a:hover {
+  color: @secondary-hover-color;
+}
+.bb-comment .comment-list .list-item .user .text-con,
+.comment-bilibili-fold .comment-list .list-item .user .text-con {
+  color: @base-text-color;
+}
+.bb-comment .comment-list .list-item .reply-box .view-more,
+.comment-bilibili-fold .comment-list .list-item .reply-box .view-more {
+  color: @secondary-color;
+}
+.bb-comment a,
+.comment-bilibili-fold a {
+  color: @secondary-color;
+}
+.bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover,
+.comment-bilibili-fold
+  .comment-list
+  .list-item
+  .reply-box
+  .view-more
+  .btn-more:hover {
+  .btn-primary-active-color();
+}
+.bb-comment .comment-list .list-item .user .name,
+.comment-bilibili-fold .comment-list .list-item .user .name {
+  color: @secondary-color;
+}
+.bb-comment .comment-list .list-item .user .name:hover,
+.comment-bilibili-fold .comment-list .list-item .user .name:hover {
+  color: @secondary-hover-color;
+}
+.bb-comment .vip-red-name,
+.comment-bilibili-fold .vip-red-name {
+  color: @contrast-color !important;
+}
+.bb-comment .vip-red-name,
+.comment-bilibili-fold .vip-red-name:hover {
+  color: @contrast-hover-color !important;
+}
+.user-card .btn-box .like {
+  border-color: @secondary-hover-color;
+  background-color: @secondary-hover-color;
+}
+.user-card .btn-box .like:hover {
+  border-color: @secondary-hover-color;
+  background-color: @secondary-hover-color;
+}
+.user-card .btn-box a:hover {
+  border-color: @secondary-hover-color;
+  color: @secondary-hover-color;
+}
+.bb-comment .comment-list .list-item:last-child .con,
+.comment-bilibili-fold .comment-list .list-item:last-child .con {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.bb-comment .comment-list .list-item .info .btn-hover:hover,
+.comment-bilibili-fold .comment-list .list-item .info .btn-hover:hover {
+  .btn-primary-active-color();
+}
+.bb-comment .comment-list .list-item .info .reply-tags span,
+.comment-bilibili-fold .comment-list .list-item .info .reply-tags span {
+  .btn-primary-active-color();
+}

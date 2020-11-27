@@ -1,0 +1,121 @@
+@import "../../variables.less";
+
+/* 排行榜 */
+.nav-tabs {
+  border-bottom: 1px solid @tab-text-color;
+}
+.nav-tabs__item {
+  position: relative;
+  bottom: -1px;
+}
+.nav-tabs__item > div > span {
+  color: @tab-text-color;
+}
+.nav-tabs__item:hover > div > span {
+  color: @tab-text-hover-color;
+}
+.nav-tabs__item--active {
+  border-bottom: 1px solid @tab-text-hover-color;
+}
+.nav-tabs__item--active > div > span {
+  color: @tab-text-hover-color;
+}
+.popular-video-container.popular-list .popular-tips {
+  color: @secondary-color;
+}
+.popular-video-container .video-card .video-name {
+  color: @video-title-color;
+}
+.popular-video-container .video-card__info:hover .video-name {
+  color: @video-title-hover-color;
+}
+.popular-video-container .video-card .up-name {
+  color: @video-subtitle-color;
+}
+.popular-video-container .video-card .up-name:hover {
+  color: @video-subtitle-color;
+}
+.popular-video-container .video-card .video-stat .play-text {
+  color: @video-subtitle-color;
+}
+.popular-video-container .video-card .video-stat .like-text {
+  color: @video-subtitle-color;
+}
+/* 每周必看 */
+.popular-video-container .weekly-header .current-tiem {
+  color: @secondary-color;
+}
+.popular-video-container .weekly-header .update-tips {
+  color: @secondary-color;
+}
+.popular-video-container .video-card .weekly-hint {
+  background: darken(@primary-color, 4%);
+  color: lighten(@primary-color, 30%);
+}
+/* 入站必刷 */
+.popular-video-container.history-list .history-tips {
+  color: @secondary-color;
+}
+.popular-video-container .video-card .history-hint {
+  background: darken(@primary-color, 4%);
+  color: lighten(@primary-color, 30%);
+}
+/* 排行榜 */
+#app .rank-container .rank-tips {
+  color: @secondary-color;
+}
+.rank-tab-wrap {
+  background: transparent;
+}
+.rank-tab-wrap .rank-tab li {
+  color: @secondary-color;
+}
+.rank-tab-wrap .rank-tab li.rank-tab--active {
+  .btn-primary-active-color();
+}
+.rank-list .rank-item {
+  border-bottom: 1px solid @secondary-color;
+}
+.rank-list .rank-item:hover {
+  box-shadow: none;
+  background: lighten(@primary-color, 5%);
+}
+.rank-list .rank-item .num {
+  color: @secondary-color;
+}
+.rank-list .rank-item .content .info .title {
+  color: @video-title-color;
+}
+.rank-list .rank-item .content .info .detail {
+  color: @video-subtitle-color;
+}
+.rank-list .rank-item .content .info .detail a {
+  color: @video-subtitle-color;
+}
+.rank-list .rank-item .content .info:hover .title {
+  color: @video-title-hover-color !important;
+}
+.rank-list .rank-item .content .info .detail .up-name:hover {
+  color: @video-subtitle-hover-color;
+}
+.rank-list .rank-item .content .info .pts {
+  color: @secondary-color;
+}
+.other {
+  border-top: 1px solid @secondary-color;
+}
+.other .other-link .title {
+  color: @video-title-color;
+}
+.other .other-link:hover .title {
+  color: @video-title-hover-color;
+}
+.other span {
+  color: @video-subtitle-color;
+}
+.other strong {
+  color: @video-subtitle-color;
+}
+.rank-list .rank-item .content .info .pgc-info {
+  color: @secondary-color;
+}

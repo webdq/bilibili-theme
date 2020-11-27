@@ -1,0 +1,110 @@
+@import "../../variables.less";
+
+/* 播放历史 */
+.history-wrap .b-head .b-head-t {
+  color: @panel-title-color;
+}
+.history-wrap .history-btn .btn {
+  border: 0;
+  .btn-primary-color();
+}
+.history-wrap .history-btn .btn:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+.history-wrap .time-label {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+.history-wrap .time-label:before {
+  border-left: 8px solid @primary-color;
+}
+.history-wrap .time-label:after {
+  border-left: 8px solid @secondary-color;
+}
+.history-wrap .time-label.active {
+  border-color: @secondary-hover-color;
+  .btn-primary-active-color();
+}
+.history-wrap .time-label.active:before {
+  border-left: 8px solid @secondary-hover-color;
+}
+.history-wrap .time-label.active:after {
+  border-left: 8px solid @secondary-hover-color;
+}
+.history-list {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+}
+.history-list .history-record {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.history-list .l-info {
+  border-right: 1px solid @secondary-color;
+}
+.history-list .l-info .lastplay-time .history-red-round {
+  border: 5px dashed @secondary-color;
+  border-right-width: 0;
+  border-left-style: solid;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+.history-list .l-info .lastplay-time .lastplay-t {
+  color: @secondary-color;
+}
+.history-list .r-info {
+  background: lighten(@primary-color, 5%);
+  padding: 20px;
+  border-radius: 4px;
+}
+.history-wrap .history-list .r-info .r-txt {
+  width: 546px;
+  border-bottom: 0;
+}
+.history-list .r-info .title {
+  color: @video-title-color;
+}
+.history-list .r-info .title:hover {
+  color: @video-title-hover-color;
+}
+.history-list .r-info .subtitle {
+  color: @video-subtitle-color;
+}
+.history-list .r-info .w-info .pro-txt {
+  color: @video-subtitle-color;
+}
+.history-list .r-info .w-info .username {
+  color: @video-subtitle-color;
+}
+.history-list .r-info .w-info .username:hover {
+  color: @video-subtitle-hover-color;
+}
+.history-list .r-info .w-info .name {
+  color: @video-subtitle-color;
+  border-left: 1px solid lighten(@primary-color, 15%);
+}
+.history-list .r-info .w-info .device {
+  color: @secondary-color;
+}
+.history-list .r-info .history-delete {
+  color: @secondary-color;
+}
+.history-list .r-info .history-delete:hover {
+  color: @secondary-hover-color;
+}
+.history-list .r-info .device-i.pc {
+  background-position: -1367px -406px;
+}
+.history-wrap .warn .txt {
+  color: @base-text-color;
+}
+.history-wrap .warn .btn {
+  border: 0;
+  .btn-primary-color();
+}
+.history-wrap .warn .btn:hover {
+  border: 0;
+  .btn-primary-active-color();
+}

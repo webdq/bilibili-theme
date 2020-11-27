@@ -1,0 +1,447 @@
+@import "../../variables.less";
+
+/* 搜索页 */
+.home-wrap .home-input .searchBtn {
+  border: 1px solid transparent;
+  .btn-primary-active-color();
+}
+.home-wrap .home-input .searchBtn:hover {
+  .btn-primary-active-color();
+}
+.home-wrap .home-tips .tips-link .tip-item a,
+.home-wrap .home-tips .tips-link .tip-item a .search-icons {
+  color: @secondary-color;
+}
+.home-wrap .home-tips .tips-link .tip-item a:hover .text {
+  color: @secondary-hover-color;
+}
+.home-wrap .home-suggest .hot-search {
+  border: 1px solid lighten(@primary-color, 10%);
+}
+.home-wrap .home-suggest .history {
+  border: 1px solid lighten(@primary-color, 10%);
+}
+.home-wrap .home-suggest .title {
+  color: @panel-title-color;
+}
+.home-wrap .home-suggest .title .subtitle {
+  color: @secondary-color;
+}
+.home-wrap .home-suggest .title .delete-history {
+  color: @secondary-color;
+}
+.home-wrap .home-suggest .title .delete-history:hover {
+  color: @secondary-hover-color;
+}
+.home-wrap .home-suggest .hotlist .item {
+  border-bottom: 1px dotted lighten(@primary-color, 5%);
+  color: @video-title-color;
+}
+.home-wrap .home-suggest .hotlist .num {
+  .rank-other-color();
+}
+.home-wrap .home-suggest .hot-search .item .num.special {
+  .rank-top-color();
+}
+.home-wrap .home-suggest .history .list .item {
+  border-bottom: 1px dotted lighten(@primary-color, 5%);
+}
+.home-wrap .home-suggest .history .list .item a {
+  color: @video-title-color;
+}
+/* 搜索header */
+.fixed-top {
+  display: none;
+}
+.search-wrap {
+  width: 100%;
+}
+.search-wrap .search-block {
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+}
+.search-wrap .search-logo {
+  display: none;
+}
+.search-wrap .search-block .input-wrap {
+  background: transparent;
+  color: @secondary-hover-color;
+  flex: auto;
+}
+.search-wrap .search-block .input-wrap input {
+  border: 1px solid @secondary-color;
+  color: @search-input-color;
+  outline: none;
+  width: 100%;
+  height: 42px;
+  box-sizing: border-box;
+}
+.search-wrap .search-block .input-wrap input:focus {
+  border: 1px solid @secondary-hover-color;
+}
+.search-wrap .search-block .search-button {
+  .btn-primary-color();
+}
+.search-wrap .search-block .search-button:hover {
+  .btn-primary-active-color();
+}
+.search-wrap .search-block .search-button .icon-search-white {
+  background-position: -231px -383px;
+}
+.search-wrap .search-block .search-button:hover .icon-search-white {
+  background-position: -148px -327px;
+}
+.suggest-wrap .horizontal .hz-text:hover {
+  border-color: @secondary-hover-color;
+  color: @secondary-hover-color;
+}
+.suggest-wrap .history-wrap .clearall a {
+  color: @secondary-hover-color;
+}
+/* 搜索tab */
+#navigator .v-switcher-header-item {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+#navigator .v-switcher-header-item a {
+  color: @tab-text-color;
+}
+#navigator .v-switcher-header-item a span {
+  color: @tab-text-badge-color;
+}
+#navigator .v-switcher-header-item .router-link-active {
+  color: @tab-text-hover-color;
+}
+#navigator .v-switcher-header-item a:hover {
+  color: @tab-text-hover-color;
+}
+#navigator .v-switcher-header-anchor {
+  background-color: @tab-text-hover-color;
+}
+/* 搜索分类 */
+.total-wrap .total-text {
+  color: @secondary-color;
+}
+.filter-wrap {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.filter-wrap .filter-item.active {
+  background-color: @secondary-hover-color;
+}
+.filter-wrap .filter-item a {
+  color: @secondary-color;
+}
+.filter-wrap .filter-item:not(.active):hover a {
+  color: @secondary-hover-color;
+}
+.filter-wrap .fold {
+  color: @secondary-color;
+}
+.filter-wrap .fold:hover {
+  background-color: transparent;
+  color: @secondary-hover-color;
+}
+/* 搜索列表 */
+#all-list .card-more {
+  color: @secondary-color;
+}
+#all-list .card-more a {
+  color: @secondary-color;
+}
+#all-list .card-more a:hover {
+  color: @secondary-hover-color;
+}
+#all-list .mixin-list ul:not(:last-child) {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.video-item.matrix {
+  border: 1px solid transparent;
+  background: darken(@primary-color, 3%);
+}
+.video-item.matrix .info {
+  color: @video-title-color;
+}
+.video-item.matrix .title {
+  color: @video-title-color;
+}
+.video-item.matrix .title:hover {
+  color: @video-title-hover-color;
+}
+.video-item.matrix .title .keyword {
+  color: @contrast-color;
+}
+.video-item.matrix .tags .so-icon {
+  color: @secondary-color;
+}
+.video-item.matrix .tags .so-icon > a {
+  color: @secondary-color;
+}
+/* 搜索--列表--横向 */
+.video-item.list {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.video-item.list .type {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+.video-item.list .title {
+  color: @video-title-color;
+}
+.video-item.list .title:hover {
+  color: @video-title-hover-color;
+}
+.video-item.list .title .keyword {
+  color: @contrast-color;
+}
+.video-item.list .des {
+  color: @video-title-color;
+}
+.video-item.list .tags .so-icon {
+  color: @secondary-color;
+}
+.video-item.list .tags .so-icon > a {
+  color: @secondary-color;
+}
+/* 搜索--列表--番剧 */
+.bangumi-item {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.bangumi-item .right-info .headline .bangumi-label {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+.bangumi-item .right-info .headline .title {
+  color: @video-title-color;
+}
+.bangumi-item .right-info .headline .title:hover {
+  color: @video-title-hover-color;
+}
+.bangumi-item .right-info .intros .label {
+  color: @secondary-color;
+}
+.bangumi-item .right-info .intros .value {
+  color: @secondary-color;
+}
+.bangumi-item .right-info .intros .desc {
+  color: @secondary-color;
+}
+.bangumi-item .right-info .score .user-count {
+  color: @secondary-color;
+}
+#pgc-navigate-wrap .ep-box .ep-sub .ep-item {
+  .btn-ghost-color();
+}
+#pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover {
+  .btn-ghost-active-color();
+}
+/* 搜索--列表--影视 */
+.pgc-item {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+.pgc-item .right-info .headline .pgc-label {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+.pgc-item .right-info .headline .title {
+  color: @video-title-color;
+}
+.pgc-item .right-info .headline .title:hover {
+  color: @video-title-hover-color;
+}
+.pgc-item .right-info .intros .label {
+  color: @secondary-color;
+}
+.pgc-item .right-info .intros .value {
+  color: @secondary-color;
+}
+.pgc-item .right-info .intros .desc {
+  color: @secondary-color;
+}
+.pgc-item .right-info .score .user-count {
+  color: @secondary-color;
+}
+#pgc-navigate-wrap .play-btn {
+  border: 0;
+  .btn-primary-color();
+}
+#pgc-navigate-wrap .play-btn .play-btn-svg {
+  fill: @primary-color;
+}
+#pgc-navigate-wrap .play-btn:hover {
+  border: 0;
+  .btn-primary-active-color();
+}
+/* 搜索--列表--直播 */
+#live-list .live-tabs a {
+  color: @tab-text-color;
+}
+#live-list .live-tabs a.active {
+  color: @tab-text-hover-color;
+  border-bottom: 2px solid @tab-text-hover-color;
+}
+#live-list .headline-live h3 {
+  color: @panel-title-color;
+}
+#live-list .headline-live h3 .num-txt {
+  color: @secondary-color;
+}
+#live-list .headline-live .user-more {
+  color: @secondary-color;
+}
+#live-list .live-user-wrap .live-user-item {
+  background: darken(@primary-color, 3%);
+  box-shadow: none;
+}
+.live-user-item .item-right .uname {
+  color: @video-title-color;
+}
+.live-user-item .item-right .status.free {
+  .btn-primary-active-color();
+}
+.live-user-item .item-right .info .star,
+.live-user-item .item-right .info .type {
+  color: @secondary-color;
+}
+.live-user-item .item-right .tags > span {
+  border: 1px solid @secondary-color;
+  color: @secondary-color;
+}
+.live-user-item .item-right .status.living {
+  .btn-contrast-active-color();
+}
+#live-list .headline-room h3 {
+  color: @video-title-color;
+}
+#live-list .headline-room h3 .num-txt {
+  color: @secondary-color;
+}
+#live-list .headline-room .filter a {
+  color: @secondary-color;
+}
+#live-list .headline-room .filter a.active,
+#live-list .headline-room .filter a:hover {
+  color: @secondary-hover-color;
+}
+#live-list .live-room-wrap .live-room-item {
+  background: lighten(@primary-color, 5%);
+}
+.live-room-item .item-title {
+  color: @video-title-color;
+}
+.live-room-item .item-info {
+  padding-bottom: 8px;
+}
+.live-room-item .item-info .live-num,
+.live-room-item .item-info .uname {
+  color: @secondary-color;
+}
+/* 搜索--列表--专栏 */
+.article-item .content .title {
+  color: @video-title-color;
+}
+.article-item .content .title:hover {
+  color: @video-title-hover-color;
+}
+.article-item .content .desc {
+  color: @secondary-color;
+}
+.article-item .content .tags .up-name {
+  color: @secondary-color;
+}
+.article-item .content .tags .up-name:hover {
+  color: @secondary-hover-color;
+}
+.article-item .content .so-icon a {
+  color: @secondary-color;
+}
+.article-item .content .so-icon {
+  color: @secondary-color;
+}
+.article-item {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+}
+/* 搜索--列表--用户 */
+#user-list .dropdown-wrap .select-wrap {
+  border-left: 1px solid darken(@primary-color, 5%);
+}
+#user-list .dropdown-wrap .select-wrap .bili-dropdown .selected {
+  color: @secondary-color;
+}
+.user-item {
+  border-bottom: 1px solid lighten(@primary-color, 5%);
+  padding: 40px 0 40px 110px;
+}
+.user-item .up-face {
+  top: 40px;
+}
+.user-item .attention-btn {
+  .btn-primary-color();
+}
+.user-item .attention-btn:hover {
+  .btn-primary-active-color();
+}
+.user-item .attention-btn.followed,
+.user-item .attention-btn.followed:hover {
+  .btn-primary-active-color();
+}
+.user-item .title {
+  color: @video-title-color;
+}
+.user-item .title:hover {
+  color: @video-title-hover-color;
+}
+.user-item .up-info > span {
+  color: @secondary-color;
+}
+.user-item .desc {
+  color: @secondary-color;
+}
+.user-item .up-videos .video-item .video-desc {
+  color: @video-title-color;
+}
+.user-item .up-videos .video-item .video-desc:hover {
+  color: @video-title-hover-color;
+}
+.user-item .up-videos .ptime {
+  color: @secondary-color;
+}
+.user-item .up-videos .video-more {
+  color: @secondary-color;
+}
+.user-item .up-videos .video-more:hover {
+  color: @secondary-hover-color;
+}
+/* 搜索--列表--相簿 */
+.photo-item {
+  border: 1px solid transparent;
+  background: #314259;
+}
+.photo-item .title {
+  color: @video-title-color;
+}
+.photo-item .title:hover {
+  color: @video-title-hover-color;
+}
+.photo-item .so-icon > a {
+  color: @secondary-color;
+}
+.photo-item .so-icon.up:hover a {
+  color: @secondary-hover-color;
+}
+.photo-item .so-icon {
+  color: @secondary-color;
+}
+/* 搜索--分页 */
+.page-wrap .pager {
+  background: transparent;
+}
+.pager .pages .page-item button {
+  .btn-ghost-color();
+}
+.pager .pages .page-item.active button,
+.pager .pages .page-item button:hover {
+  .btn-ghost-active-color();
+}
+.pager .pages strong {
+  color: @secondary-color;
+}
